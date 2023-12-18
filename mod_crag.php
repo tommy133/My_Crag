@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+
 <html>
 <title>Modificar sector</title>
 <head>
@@ -12,8 +14,6 @@
 
 <?php include "display_cons_options.html";
     include "conection.php";
-    session_start();
-
 ?>
 
 <br>

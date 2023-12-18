@@ -1,8 +1,9 @@
+<?php session_start(); ?>
+
 <?php
   include "crag_form_cons.php";
   include "conection.php";
 
-  session_start();
   $_SESSION["id_sect"] = $_GET["id_sect"];
 
   $consulta="select * from sector LEFT JOIN images ON (sector.foto = images.id_img) WHERE id_sect='".$_SESSION["id_sect"]."'";

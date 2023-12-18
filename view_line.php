@@ -1,8 +1,9 @@
+<?php session_start(); ?>
+
 <?php
   include "display_cons_options.html";
   include "conection.php";
 
-  session_start();
   $_SESSION["id_via"] = $_GET['id'];
 
   $consulta="select * from via LEFT JOIN images ON (via.foto = images.id_img) WHERE id_via='".$_SESSION["id_via"]."'";
