@@ -1,5 +1,6 @@
 body {
   background-color: rgb(42, 42, 47);
+  margin: 0;
 }
 
 .main {
@@ -15,7 +16,7 @@ body {
   display: flex;
   flex-direction: row;
   width: 40vw;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .main-button {
@@ -32,14 +33,9 @@ body {
     Ubuntu, sans-serif;
   font-size: 100%;
   font-weight: 600;
-  height: 50px;
-  width: 200px;
   line-height: 1.15;
-  margin: 12px 0 0;
   outline: none;
   overflow: hidden;
-  padding: 0 25px;
-  position: relative;
   text-align: center;
   text-transform: none;
   transform: translateZ(0);
@@ -47,4 +43,14 @@ body {
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: 10vh;
+  background-color: gray;
 }
